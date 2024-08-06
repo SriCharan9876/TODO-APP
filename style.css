@@ -1,0 +1,134 @@
+body{
+    background-color: #B984DB;
+}
+main{
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: indigo;
+    font-size:3rem;
+}
+.controls{
+    display: flex;
+    padding:0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #7209B7;
+    width:60rem;
+    border-radius: 0.5rem;
+}
+input{
+    margin:1.5rem 0.5rem 1.5rem 1.5rem;
+    border-radius: 1rem;
+    height: 2.5rem;
+    width:70%;
+    padding:0 1rem 0 1rem;
+    background-color: #f8e2d4;
+    border:none;
+}
+.btn-add{
+    height: 2.5rem;
+    width: 5rem;
+    margin:1rem;
+    border-radius: 1rem;
+    background-color: #e3bd68;
+    color: #7209B7;
+    font-weight: 700;
+}
+.todos{
+    display: flex;
+    justify-content: space-between;
+    margin:4rem auto 4rem auto;
+    width:95%;
+}
+.todo-sec{
+    background-color: #7209B7;
+    width:25%;
+    margin:0 auto 3rem auto;
+    border-radius: 0.5rem;
+    padding:1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todo-sec-title{
+    font-size:1.75em;
+    color:#e3bd68;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    width:100%;
+}
+li{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:0;
+    margin:1.5rem;
+}
+.work{
+    height: 2.75rem;
+    width:100%;
+    color:indigo;
+    background-color: #f8e2d4;
+    font-size:2rem;
+    font-weight: 700;
+    overflow: hidden;
+    margin:0;
+    border-radius:2rem 0 0 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todobtn{
+    height: 2.75rem;
+    width: 5rem;
+    border-radius: 0 1.5rem 1.5rem 0;
+    border:none;
+    background-color: #e3bd68;
+    color: #7209B7;
+    font-weight: 700;
+}
+
+@media (max-width: 1100px) and (min-width: 500px){
+    .todo-sec-title{
+        font-size: 1.5em;
+    }
+    .todos{
+        flex-wrap:wrap;
+    }
+    .todo-sec{
+        width:45%;
+    }
+}
+@media (max-width: 550px){
+    .todo-sec-title{
+        font-size: 1.25em;
+    }
+    .todos{
+        flex-wrap:wrap;
+    }
+    .todo-sec{
+        width:80%;
+    }
+    .work{
+        height:2.25rem;
+        font-size:1rem;
+    }
+    .todobtn{
+        height: 2.25rem;
+    }
+}
+@media (max-width: 800px){
+    .controls{
+        width:80%;
+    }
+}
